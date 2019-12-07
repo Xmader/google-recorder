@@ -1,7 +1,8 @@
 
 # Xmader/google-recorder
 
-> make [Google Recorder](https://play.google.com/store/apps/details?id=com.google.android.apps.recorder) run on any Android devices (Android >= 9)
+> Make the powerful [Google Recorder](https://play.google.com/store/apps/details?id=com.google.android.apps.recorder) app run on any Android devices (Android >= 9).  
+> Fuck off, device restrictions.
 
 > *Google Recorder is only officially available for Pixel >=2 phones currently.*
 
