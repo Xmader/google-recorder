@@ -12,7 +12,7 @@ apktool decode $APK_FILE \
 # patch
 FILE_TO_PATCH_0="$APK_OUT_DIR/smali/com/google/android/apps/recorder/ui/application/RecorderApplication.smali"
 STR1="com.google.android.feature.PIXEL_2017_EXPERIENCE"
-STR2="android.hardware.touchscreen.multitouch.distinct"
+STR2="android.hardware.microphone"
 sed -i "s/$STR1/$STR2/" $FILE_TO_PATCH_0
 
 # FILE_TO_PATCH_1="$APK_OUT_DIR/res/layout/activity_main.xml"
