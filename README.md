@@ -6,7 +6,7 @@
 
 > *Google Recorder is only officially available for Pixel >=2 phones currently.*
 
-## Dependencies 
+## Requirements 
 
 * [OpenJDK](https://openjdk.java.net/install/)
 * [Apktool](https://github.com/iBotPeaches/Apktool)
