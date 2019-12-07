@@ -20,6 +20,10 @@ export KEYSTORE_ALIAS=<your keystore alias>
 ./patch.sh
 ```
 
+## Download Artifacts
+
+[Github Release](https://github.com/Xmader/google-recorder/releases/latest)
+
 ## License
 
 MIT
