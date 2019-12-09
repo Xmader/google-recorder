@@ -23,7 +23,9 @@ export KEYSTORE_ALIAS=<your keystore alias>
 
 ## How
 
-The Google Recorder app [checks](https://developer.android.com/reference/android/content/pm/PackageManager.html#hasSystemFeature(java.lang.String)) the `com.google.android.feature.PIXEL_2017_EXPERIENCE` system feature to ensure that it is running on Pixel 2 or later phones.  
+Google added some restrictions if you want to [sideload](https://www.xda-developers.com/pixel-4-recorder-app-screen-attention-older-pixel/) the app to install it on other Android devices.
+
+The Google Recorder app [checks](https://developer.android.com/reference/android/content/pm/PackageManager.html#hasSystemFeature(java.lang.String)) for the `com.google.android.feature.PIXEL_2017_EXPERIENCE` system feature to ensure that it is running on Pixel 2 or later phones.  
 
 If the system feature doesn't exist, it throws an error and the app exits immediately.
 
