@@ -32,13 +32,22 @@ If the system feature doesn't exist, it throws an error and the app exits immedi
 * pseudocode by decompiling / analysing  the `com/google/android/apps/recorder/ui/application/RecorderApplication.java` file
 
 ```java
+package com.google.android.apps.recorder.ui.application;
+
+import android.app.Application;
+
+public class RecorderApplication extends Application {
+    // …
     public void onCreate() {
         super.onCreate();
         if (isDevBuild() || getPackageManager().hasSystemFeature("com.google.android.feature.PIXEL_2017_EXPERIENCE")) {
             // …
+            return;
         }
         throw new IllegalStateException("Cannot start Recorder on unsupported device");
     }
+    // …
+}
 ```
 
 This patch replaces the `com.google.android.feature.PIXEL_2017_EXPERIENCE` string with `android.hardware.microphone` that every phone / Android device should have this system feature if the device can record audio,  
